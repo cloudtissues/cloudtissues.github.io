@@ -6,13 +6,11 @@
 <title>Cloud Tissues – Tissue Napkins for Hotels, Caterers & Shops</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f5faff;--card:#fff;--ink:#12293d;--mute:#4d6a82;--brand:#2b7fc7;--brand-ink:#fff;--pop:#bfe3fb;--line:#d3e6f3;
+:root{color-scheme:light;--bg:#eaf5ff;--card:#fff;--ink:#12293d;--mute:#4d6a82;--brand:#2b7fc7;--brand-ink:#fff;--pop:#bfe3fb;--line:#d3e6f3;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1a26;--card:#132638;--ink:#e8f2fb;--mute:#9bb6cc;--brand:#6db8f0;--brand-ink:#08202f;--line:#25415a}}
-:root[data-theme="dark"]{--bg:#0d1a26;--card:#132638;--ink:#e8f2fb;--mute:#9bb6cc;--brand:#6db8f0;--brand-ink:#08202f;--line:#25415a}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:inherit}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:'Outfit',system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.55}
+body{margin:0;color:var(--ink);font-family:'Outfit',system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.55}
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
 header{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.25rem;letter-spacing:-.02em}.logo img{width:52px;height:52px;border-radius:50%;background:#fff}.hero-logo{width:100%;max-width:280px;border-radius:50%;background:#fff;display:block;margin-inline:auto}
@@ -35,7 +33,7 @@ h2{font-size:1.7rem;letter-spacing:-.02em;margin:0 0 6px}
 section{padding:36px 0}
 .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));max-width:720px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px}
-.card h3{margin:0;font-size:1.1rem}
+.pic svg{width:100%;height:auto;display:block;border-radius:10px}.card h3{margin:0;font-size:1.1rem}
 .tag{align-self:flex-start;background:var(--pop);color:#0f3452;font-size:.8rem;font-weight:600;padding:2px 10px;border-radius:999px}
 .spec{color:var(--mute);font-size:.95rem;margin:0}
 .card .btn{margin-top:auto;text-align:center;padding:10px 16px}
@@ -49,6 +47,9 @@ input,select,textarea{font:inherit;padding:10px 12px;border:1px solid var(--line
 footer{border-top:1px solid var(--line);padding:24px 0 32px;color:var(--mute);font-size:.95rem}
 @media(max-width:720px){.hero{grid-template-columns:1fr}.stack{height:210px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:linear-gradient(180deg,#d6ebff 0%,#eaf5ff 45%,#f7fbff 100%) fixed;position:relative}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100'%3E%3Cg fill='white'%3E%3Ccircle cx='60' cy='60' r='28'/%3E%3Ccircle cx='96' cy='44' r='36'/%3E%3Ccircle cx='136' cy='58' r='30'/%3E%3Crect x='36' y='58' width='134' height='32' rx='16'/%3E%3C/g%3E%3C/svg%3E") 4% 6%/230px no-repeat,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100'%3E%3Cg fill='white'%3E%3Ccircle cx='60' cy='60' r='28'/%3E%3Ccircle cx='96' cy='44' r='36'/%3E%3Ccircle cx='136' cy='58' r='30'/%3E%3Crect x='36' y='58' width='134' height='32' rx='16'/%3E%3C/g%3E%3C/svg%3E") 90% 18%/320px no-repeat,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100'%3E%3Cg fill='white'%3E%3Ccircle cx='60' cy='60' r='28'/%3E%3Ccircle cx='96' cy='44' r='36'/%3E%3Ccircle cx='136' cy='58' r='30'/%3E%3Crect x='36' y='58' width='134' height='32' rx='16'/%3E%3C/g%3E%3C/svg%3E") 8% 62%/280px no-repeat,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100'%3E%3Cg fill='white'%3E%3Ccircle cx='60' cy='60' r='28'/%3E%3Ccircle cx='96' cy='44' r='36'/%3E%3Ccircle cx='136' cy='58' r='30'/%3E%3Crect x='36' y='58' width='134' height='32' rx='16'/%3E%3C/g%3E%3C/svg%3E") 78% 82%/220px no-repeat,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100'%3E%3Cg fill='white'%3E%3Ccircle cx='60' cy='60' r='28'/%3E%3Ccircle cx='96' cy='44' r='36'/%3E%3Ccircle cx='136' cy='58' r='30'/%3E%3Crect x='36' y='58' width='134' height='32' rx='16'/%3E%3C/g%3E%3C/svg%3E") 48% 40%/170px no-repeat}
+.wrap,footer{position:relative;z-index:1}
 </style>
 </head>
 <body>
@@ -101,16 +102,32 @@ footer{border-top:1px solid var(--line);padding:24px 0 32px;color:var(--mute);fo
 <script>
 // EDIT THESE: your WhatsApp number (country code + number, no + or spaces) and product list
 var PHONE="919123565959";
+var IMG1=`<svg viewBox="0 0 300 220" role="img" aria-label="Cloud Tissues napkin pack, 27x30 cm, 100 pulls, 1 ply"><rect width="300" height="220" rx="12" fill="#e6f3fd"/>
+<g transform="rotate(-6 150 60)"><path d="M95 78 L100 34 Q150 24 200 34 L205 78Z" fill="#fff" stroke="#2b7fc7" stroke-width="3"/><path d="M110 60 Q150 52 190 60" fill="none" stroke="#bfe3fb" stroke-width="3"/></g>
+<rect x="55" y="72" width="190" height="122" rx="12" fill="#fff" stroke="#2b7fc7" stroke-width="3"/>
+<rect x="55" y="72" width="190" height="34" rx="12" fill="#2b7fc7"/><rect x="55" y="92" width="190" height="14" fill="#2b7fc7"/>
+<text x="150" y="96" text-anchor="middle" font-size="19" font-weight="800" fill="#fff" font-family="Outfit,system-ui,sans-serif">Cloud Tissues</text>
+<g fill="#8fd0fa" stroke="#2b7fc7" stroke-width="2"><circle cx="128" cy="130" r="9"/><circle cx="145" cy="126" r="13"/><circle cx="163" cy="130" r="9"/></g>
+<text x="150" y="163" text-anchor="middle" font-size="17" font-weight="800" fill="#12293d" font-family="Outfit,system-ui,sans-serif">27×30 cm</text>
+<text x="150" y="183" text-anchor="middle" font-size="13" font-weight="600" fill="#4d6a82" font-family="Outfit,system-ui,sans-serif">100 pulls · 1 ply</text></svg>`;
+var IMG2=`<svg viewBox="0 0 300 220" role="img" aria-label="Customised printed napkin with your logo"><rect width="300" height="220" rx="12" fill="#e6f3fd"/>
+<rect x="78" y="34" width="150" height="150" rx="6" fill="#cfe9fb" stroke="#2b7fc7" stroke-width="3" transform="rotate(9 153 109)"/>
+<rect x="68" y="34" width="150" height="150" rx="6" fill="#fff" stroke="#2b7fc7" stroke-width="3" transform="rotate(-4 143 109)"/>
+<g transform="rotate(-4 143 109)"><circle cx="143" cy="98" r="30" fill="none" stroke="#2b7fc7" stroke-width="2.5" stroke-dasharray="6 5"/>
+<text x="143" y="103" text-anchor="middle" font-size="14" font-weight="800" fill="#2b7fc7" font-family="Outfit,system-ui,sans-serif">Your logo</text>
+<text x="143" y="152" text-anchor="middle" font-size="14" font-weight="600" fill="#12293d" font-family="Outfit,system-ui,sans-serif">Your shop name</text>
+<path d="M98 164 H188" stroke="#bfe3fb" stroke-width="3" stroke-linecap="round"/></g>
+<rect x="196" y="176" width="88" height="26" rx="13" fill="#2b7fc7"/><text x="240" y="194" text-anchor="middle" font-size="13" font-weight="600" fill="#fff" font-family="Outfit,system-ui,sans-serif">Custom print</text></svg>`;
 var PRODUCTS=[
-{n:"Tissue Napkin 27×30",s:"27×30 cm · 100 pulls per pack",t:"Ready stock"},
-{n:"Customised Printed Napkin 27×30",s:"Your name or logo printed · 27×30 cm · 100 pulls per pack",t:"Brand your shop"}
+{n:"Tissue Napkin 27×30",s:"27×30 cm · 100 pulls per pack · 1 ply",t:"Ready stock",img:IMG1},
+{n:"Customised Printed Napkin 27×30",s:"Your name or logo printed · 27×30 cm · 100 pulls per pack · 1 ply",t:"Brand your shop",img:IMG2}
 ];
 function wa(msg){return "https://wa.me/"+PHONE+"?text="+encodeURIComponent(msg)}
 var g=document.getElementById("grid"),sel=document.getElementById("p");
 PRODUCTS.forEach(function(x){
  var d=document.createElement("div");d.className="card";
- d.innerHTML='<span class="tag"></span><h3></h3><p class="spec"></p><a class="btn" target="_blank" rel="noopener">Order on WhatsApp</a>';
- d.querySelector(".tag").textContent=x.t;d.querySelector("h3").textContent=x.n;d.querySelector(".spec").textContent=x.s;
+ d.innerHTML='<div class="pic"></div><span class="tag"></span><h3></h3><p class="spec"></p><a class="btn" target="_blank" rel="noopener">Order on WhatsApp</a>';
+ d.querySelector(".pic").innerHTML=x.img;d.querySelector(".tag").textContent=x.t;d.querySelector("h3").textContent=x.n;d.querySelector(".spec").textContent=x.s;
  d.querySelector("a").href=wa("Hi, I want to order "+x.n+" ("+x.s+"). Please share the price.");
  g.appendChild(d);
  var o=document.createElement("option");o.textContent=x.n;sel.appendChild(o);
